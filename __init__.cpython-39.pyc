@@ -1,0 +1,21 @@
+Traceback (most recent call last):
+  File "/data/data/com.termux/files/usr/bin/uncompyle6", line 10, in <module>
+    sys.exit(main_bin())
+  File "/data/data/com.termux/files/usr/lib/python2.7/site-packages/uncompyle6/bin/uncompile.py", line 194, in main_bin
+    **options)
+  File "/data/data/com.termux/files/usr/lib/python2.7/site-packages/uncompyle6/main.py", line 324, in main
+    do_fragments,
+  File "/data/data/com.termux/files/usr/lib/python2.7/site-packages/uncompyle6/main.py", line 222, in decompile_file
+    do_fragments=do_fragments,
+  File "/data/data/com.termux/files/usr/lib/python2.7/site-packages/uncompyle6/main.py", line 141, in decompile
+    co, out, bytecode_version, debug_opts=debug_opts, is_pypy=is_pypy
+  File "/data/data/com.termux/files/usr/lib/python2.7/site-packages/uncompyle6/semantics/pysource.py", line 2570, in code_deparse
+    scanner = get_scanner(version, is_pypy=is_pypy)
+  File "/data/data/com.termux/files/usr/lib/python2.7/site-packages/uncompyle6/scanner.py", line 566, in get_scanner
+    "scan.Scanner%s(show_asm=show_asm)" % v_str, locals(), globals()
+  File "<string>", line 1, in <module>
+  File "/data/data/com.termux/files/usr/lib/python2.7/site-packages/uncompyle6/scanners/scanner39.py", line 36, in __init__
+    Scanner37Base.__init__(self, 3.9, show_asm)
+  File "/data/data/com.termux/files/usr/lib/python2.7/site-packages/uncompyle6/scanners/scanner37base.py", line 98, in __init__
+    self.opc.END_FINALLY,
+AttributeError: 'module' object has no attribute 'END_FINALLY'
